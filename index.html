@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="big-box">
+      <h1>
+        <img src="./images/logo.svg" alt="Spliter" />
+      </h1>
+      <section class="calculator">
+        <section class="calculator__input">
+          <section class="calculator__bill">
+            <h2>Bill</h2>
+            <form>
+              <img src="./images/icon-dollar.svg" alt="" />
+              <input
+                type="number"
+                name="money"
+                id="money"
+                placeholder="0"
+                class="inputs"
+              />
+            </form>
+          </section>
+
+          <section class="calculator__tip">
+            <h2>Select Tip %</h2>
+
+            <ul class="tip-list">
+              <li>5%</li>
+              <li>10%</li>
+              <li>15%</li>
+              <li>25%</li>
+              <li>50%</li>
+
+              <input
+                type="number"
+                placeholder="Custom"
+                class="inputs inputs--tip"
+              />
+            </ul>
+          </section>
+
+          <section class="calculator__people">
+            <h2>Number of People</h2>
+            <form>
+              <img src="./images/icon-person.svg" alt="" />
+              <input type="number" placeholder="0" class="inputs" />
+            </form>
+          </section>
+        </section>
+
+        <section class="calculator__output">
+          <section class="calculator__tip-amount">
+            <section>
+              <h3>Tip Amount</h3>
+              <span>/ person</span>
+            </section>
+            <h4>$4.27</h4>
+          </section>
+
+          <section class="calculator__total">
+            <section>
+              <h3>Total</h3>
+              <span>/ person</span>
+            </section>
+            <h4>$32.79</h4>
+          </section>
+
+          <button class="inputs inputs--reset">Reset</button>
+        </section>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Carlos Eduardo</a>.
+    </div> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
