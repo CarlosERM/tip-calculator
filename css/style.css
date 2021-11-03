@@ -106,18 +106,25 @@ form img {
   font-weight: 700;
   border-radius: 0.3125rem;
 }
+.tip-list li.active {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
 .tip-list li:hover {
   background-color: var(--strong-cyan);
   color: var(--very-dark-cyan);
+  cursor: pointer;
 }
 .inputs--tip::placeholder {
   color: var(--dark-grayish-cyan);
   /* opacity: 0.8; */
 }
+
 /* PEOPLE */
 .calculator__people {
   margin-top: 2.3125rem;
 }
+
 /* OUTPUT */
 
 .calculator__output {
@@ -125,6 +132,7 @@ form img {
   border-radius: 1rem;
   padding: 2.8rem 1.3rem 1.4rem 1.4375rem;
   margin-top: 32px;
+  overflow: hidden;
 }
 .calculator__tip-amount,
 .calculator__total {
@@ -150,11 +158,22 @@ span {
   font-weight: 700;
   color: var(--dark-grayish-cyan2);
 }
-
 .inputs--reset {
   text-align: center;
   padding: 0rem;
   background-color: var(--strong-cyan);
   text-transform: uppercase;
   margin-top: 2.1875rem;
+}
+
+.inputs--reset:hover {
+  background-color: var(--light-grayish-cyan);
+  cursor: pointer;
+}
+.inputs--reset--op {
+  opacity: 0.2;
+}
+.inputs--reset--op:hover {
+  background-color: var(--strong-cyan);
+  cursor: auto;
 }

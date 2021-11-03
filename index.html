@@ -43,16 +43,17 @@
             <h2>Select Tip %</h2>
 
             <ul class="tip-list">
-              <li>5%</li>
-              <li>10%</li>
-              <li>15%</li>
-              <li>25%</li>
-              <li>50%</li>
+              <li data-value="0.05">5%</li>
+              <li data-value="0.10">10%</li>
+              <li data-value="0.15">15%</li>
+              <li data-value="0.25">25%</li>
+              <li data-value="0.50">50%</li>
 
               <input
                 type="number"
                 placeholder="Custom"
                 class="inputs inputs--tip"
+                id="input-custom"
               />
             </ul>
           </section>
@@ -61,7 +62,7 @@
             <h2>Number of People</h2>
             <form>
               <img src="./images/icon-person.svg" alt="" />
-              <input type="number" placeholder="0" class="inputs" />
+              <input type="number" placeholder="0" class="inputs" id="people" />
             </form>
           </section>
         </section>
@@ -72,7 +73,7 @@
               <h3>Tip Amount</h3>
               <span>/ person</span>
             </section>
-            <h4>$4.27</h4>
+            <h4>$0.00</h4>
           </section>
 
           <section class="calculator__total">
@@ -80,10 +81,10 @@
               <h3>Total</h3>
               <span>/ person</span>
             </section>
-            <h4>$32.79</h4>
+            <h4>$0.00</h4>
           </section>
 
-          <button class="inputs inputs--reset">Reset</button>
+          <button class="inputs inputs--reset inputs--reset--op">Reset</button>
         </section>
       </section>
     </main>
