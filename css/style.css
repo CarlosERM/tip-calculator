@@ -188,6 +188,9 @@ span {
   h1 {
     padding: 0rem;
   }
+  .inputs::placeholder {
+    font-size: 1.4rem;
+  }
   .big-box {
     display: flex;
     justify-content: center;
