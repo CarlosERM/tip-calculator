@@ -10,6 +10,10 @@ const tip = document.querySelector(".calculator__tip-amount h4");
 let percentageValue;
 const total = document.querySelector(".calculator__total h4");
 
+function roundToTwo(num) {
+  return +(Math.round(num + "e+2") + "e-2");
+}
+
 function handleLi() {
   percentage.forEach((li) => {
     li.classList.remove("active");
@@ -43,10 +47,22 @@ function handleInput() {
 
   const grandTotal = value + tipValue;
 
-  tip.innerHTML = `$${(tipValue / (people || 1)).toFixed(2)}`;
-  total.innerHTML = `$${grandTotal.toFixed(2)}`;
+  tip.innerHTML = `$${roundToTwo(tipValue / (people || 1))}`;
+  total.innerHTML = `$${roundToTwo(grandTotal / people)}`;
 
-  inputReset.classList.remove("inputs--reset--op");
+  if (inputReset.classList.contains("inputs--reset--op")) {
+    inputReset.classList.remove("inputs--reset--op");
+  }
+  if (
+    bill.value === `` &&
+    numberPeople.value === `` &&
+    tip.innerHTML === `$0.00` &&
+    total.innerHTML === `$0.00` &&
+    customTip.value === ``
+  ) {
+    inputReset.classList.add("inputs--reset--op");
+  }
+
   inputReset.addEventListener("click", reseter);
 }
 
