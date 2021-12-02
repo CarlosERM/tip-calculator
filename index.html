@@ -23,8 +23,8 @@
       <h1>
         <img src="./images/logo.svg" alt="Spliter" />
       </h1>
-      <section class="calculator">
-        <section class="calculator__input">
+      <div class="calculator">
+        <div class="calculator__input">
           <section class="calculator__bill">
             <h2>Bill</h2>
             <form>
@@ -49,12 +49,14 @@
               <li data-value="0.25">25%</li>
               <li data-value="0.50">50%</li>
 
-              <input
-                type="number"
-                placeholder="Custom"
-                class="inputs inputs--tip"
-                id="input-custom"
-              />
+              <li>
+                <input
+                  type="number"
+                  placeholder="Custom"
+                  class="inputs inputs--tip"
+                  id="input-custom"
+                />
+              </li>
             </ul>
           </section>
 
@@ -65,28 +67,28 @@
               <input type="number" placeholder="0" class="inputs" id="people" />
             </form>
           </section>
-        </section>
+        </div>
 
         <section class="calculator__output">
-          <section class="calculator__tip-amount">
+          <div class="calculator__tip-amount">
             <section>
               <h3>Tip Amount</h3>
               <span>/ person</span>
             </section>
             <h4>$0.00</h4>
-          </section>
+          </div>
 
-          <section class="calculator__total">
+          <div class="calculator__total">
             <section>
               <h3>Total</h3>
               <span>/ person</span>
             </section>
             <h4>$0.00</h4>
-          </section>
+          </div>
 
           <button class="inputs inputs--reset inputs--reset--op">Reset</button>
         </section>
-      </section>
+      </div>
     </main>
 
     <!-- <div class="attribution">

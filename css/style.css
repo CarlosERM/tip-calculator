@@ -106,7 +106,7 @@ form img {
   color: var(--white);
   font-size: 1.5rem;
   font-weight: 700;
-  border-radius: 0.3125rem;
+  border-radius: 0.4rem;
 }
 .tip-list li.active {
   background-color: var(--strong-cyan);
@@ -117,6 +117,7 @@ form img {
   color: var(--very-dark-cyan);
   cursor: pointer;
 }
+
 .inputs--tip::placeholder {
   color: var(--dark-grayish-cyan);
   /* opacity: 0.8; */
